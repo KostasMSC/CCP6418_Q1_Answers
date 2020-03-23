@@ -8,12 +8,12 @@ public class ArrayClassTest {
 	public void testSearch() {
 		
 		int[] arr = {4, 3, 6, 2, 6, 8, 9};
-		int[] arrNull;
+		int[] arrNull = {};
 		
 //		System.out.println(ArrayClass.search(arr, 6));
 		
 		assertEquals(2, ArrayClass.search(arr, 6));		
-		assertEquals(-1, ArrayClass.search(arr, 5));
+		assertEquals(-1, ArrayClass.search(arrNull, 5));
 	}
 
 //	@Test
